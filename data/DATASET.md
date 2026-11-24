@@ -17,7 +17,7 @@ Folder name = class label. Two classes (pothole / normal) or more both work.
    "Pothole Detection Dataset" (plain-road vs pothole images, split into
    train/test, roughly 6,000 JPEGs incl. rainy, waterlogged and dashcam shots).
    Search Kaggle for *"Pothole Detection Dataset"*, or see the related
-   `sachinpatel21/pothole-image-dataset` or 'https://www.kaggle.com/datasets/atulyakumar98/pothole-detection-dataset'on Kaggle.
+   `sachinpatel21/pothole-image-dataset` or the original data on which this was trained upon: 'https://www.kaggle.com/datasets/atulyakumar98/pothole-detection-dataset'on Kaggle.
 2. Unzip it, then merge/rename the folders into `data/raw/`:
    ```bash
    python src/prepare_dataset.py --src path/to/unzipped_dataset
@@ -32,10 +32,4 @@ your report. (Annotated object-detection sets such as the Roboflow
 "Pothole Dataset" by Atikur Rahman Chitholian can also be used: crop the boxes
 into `pothole/` and sample background patches into `normal/`.)
 
-## Option B - Synthetic data (offline smoke test only)
 
-```bash
-python src/generate_synthetic_data.py --n 300
-```
-Generates 3 classes of artificial road textures. It is **much easier** than real
-photos, so scores will be near-perfect - never report these as your final results.
