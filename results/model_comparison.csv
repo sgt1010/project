@@ -1,0 +1,4 @@
+Model,Best params,CV F1 (mean),CV F1 (std),Accuracy,Precision,Recall,F1,AUC,Train time (s),Predict ms/img
+KNN,"{""n_neighbors"": 5, ""p"": 1, ""weights"": ""uniform""}",0.8303,0.028,0.8321,0.8572,0.837,0.8303,0.9581,21.9499,0.9539
+SVM,"{""C"": 10, ""gamma"": ""scale"", ""kernel"": ""rbf""}",0.9061,0.0291,0.9343,0.9376,0.9329,0.934,0.9782,1.923,0.1406
+Decision Tree,"{""criterion"": ""entropy"", ""max_depth"": 8, ""min_samples_leaf"": 3}",0.8005,0.0476,0.7883,0.7935,0.7856,0.7861,0.7956,2.1513,0.0103

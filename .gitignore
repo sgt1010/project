@@ -1,0 +1,6 @@
+data/raw/
+data/features.csv
+models/*.joblib
+results/predictions/
+__pycache__/
+*.pyc
